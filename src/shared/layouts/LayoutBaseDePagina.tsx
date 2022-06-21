@@ -36,7 +36,8 @@ export const LayoutBaseDePagina: React.FC<ILayoutBaseDePagina> = ({ children, ti
             {barraDeFerramentas && (
                 <Box>
                     {barraDeFerramentas}
-                </Box>)}
+                </Box>
+            )}
 
             <Box flex={1} overflow="auto">
                 {children}
