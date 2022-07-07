@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Icon, IconButton, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Icon, IconButton, Theme, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { Box } from "@mui/system"
 import { useDrawerContext } from "../contexts";
 
@@ -11,8 +11,8 @@ interface ILayoutBaseDePagina {
 
 export const LayoutBaseDePagina: React.FC<ILayoutBaseDePagina> = ({ children, titulo, barraDeFerramentas }) => {
     const theme = useTheme()
-    const smDown = useMediaQuery(theme.breakpoints.down('sm')) // verificando se a tela é pequena
-    const mdDown = useMediaQuery(theme.breakpoints.down('md')) // verificando se a tela é pequena
+    const smDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm')) // verificando se a tela é pequena
+    const mdDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('md')) // verificando se a tela é pequena
     const { toggleDrawerOpen } = useDrawerContext()
     return (
         <Box height="100%" display="flex" flexDirection="column" gap={1}>
