@@ -26,6 +26,7 @@ const getAll = async (
 ): Promise<IPessoasComTotalCount | Error> => {
   try {
     const urlRelativa = `/pessoas?_page=${page}&_limit=${Environment.LIMITE_DE_LINHAS}&nomeCompleto_like=${filter}`;
+
     const { data, headers } = await Api.get(urlRelativa);
 
     if (data) {
@@ -37,11 +38,11 @@ const getAll = async (
       };
     }
 
-    return new Error("Error ao listar os registros.");
+    return new Error("Erro ao listar os registros.");
   } catch (error) {
     console.error(error);
     return new Error(
-      (error as { message: string }).message || "Error ao listar os registros."
+      (error as { message: string }).message || "Erro ao listar os registros."
     );
   }
 };

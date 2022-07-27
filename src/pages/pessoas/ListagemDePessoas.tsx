@@ -12,7 +12,7 @@ import { Environment } from '../../shared/environment';
 export const ListagemDePessoas: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const { debounce } = useDebounce();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const [rows, setRows] = useState<IListagemPessoa[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -49,22 +49,20 @@ export const ListagemDePessoas: React.FC = () => {
   }, [busca, pagina]);
 
   const handleDelete = (id: number) => {
-    if (window.confirm("Realmente deseja apagar?")) {
+    if (window.confirm('Realmente deseja apagar?')) {
       PessoasService.deleteById(id)
         .then(result => {
           if (result instanceof Error) {
-            alert(result.message)
+            alert(result.message);
           } else {
             setRows(oldRows => [
-              ...oldRows.filter(oldRow => oldRow.id !== id)
-            ]
-            )
-            alert('Registro apagado com sucesso!')
+              ...oldRows.filter(oldRow => oldRow.id !== id),
+            ]);
+            alert('Registro apagado com sucesso!');
           }
-        })
+        });
     }
-  }
-
+  };
 
 
   return (
