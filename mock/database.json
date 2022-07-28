@@ -78,5 +78,15 @@
       "Email": "jose@gmail.com",
       "cidadeId": "1"
     }
+  ],
+  "cidades": [
+    {
+      "nome": "Porto Alegre",
+      "id": 1
+    },
+    {
+      "nome": "Dois irmãos",
+      "id": 2
+    }
   ]
 }
