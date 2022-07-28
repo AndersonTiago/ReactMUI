@@ -104,8 +104,6 @@ export const DetalheDePessoas: React.FC = () => {
 
         formRef.current?.setErrors(validationErrors)
       });
-
-
   };
 
   const handleDelete = (id: number) => {
