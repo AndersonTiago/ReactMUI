@@ -83,10 +83,9 @@
     {
       "nome": "Porto Alegre",
       "id": 1
-    },
-    {
-      "nome": "Dois irmãos",
-      "id": 2
     }
-  ]
+  ],
+  "auth": {
+    "accessToken": "aaaaa.bbbbb.cccccc"
+  }
 }
