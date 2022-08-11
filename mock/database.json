@@ -4,7 +4,7 @@
       "id": 3,
       "nomeCompleto": "Carlos Silva",
       "email": "carlos@gmail.com",
-      "cidadeId": 1
+      "cidadeId": 3
     },
     {
       "id": 5,
@@ -28,7 +28,7 @@
       "id": 8,
       "nomeCompleto": "Ariane Silva",
       "email": "ariane@gmail.com",
-      "cidadeId": 1
+      "cidadeId": 2
     },
     {
       "id": 9,
@@ -83,6 +83,30 @@
     {
       "nome": "Porto Alegre",
       "id": 1
+    },
+    {
+      "nome": "Novo Hamburgo",
+      "id": 2
+    },
+    {
+      "nome": "Taquara",
+      "id": 3
+    },
+    {
+      "nome": "Palmitinho",
+      "id": 4
+    },
+    {
+      "nome": "Caxias",
+      "id": 5
+    },
+    {
+      "nome": "Sapucaia do Sul",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "nome": "Tramandaí"
     }
   ],
   "auth": {
